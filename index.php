@@ -157,22 +157,24 @@
 		<section class="section-3">
 			<?php require_once "./products/topproduct.php"; ?>
 		</section>
+		<section class="section-4">
+			<?php require_once "./products/rand-product.php"; ?>
+		</section>
 	</main>
-	<script src="./public/js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- Latest compiled and minified CSS & JS -->
+	<script src="./public/js/jquery-3.4.1.min.js"></script>
+	
+	
+	<script src="./public/js/owl.carousel.js" type="text/javascript"></script>
 	<script src="./public/js/bootstrap.min.js"></script>
-	<script src="./public/js/main.js" type="text/javascript" charset="utf-8"></script>
-	<script src="./public/js/owl.carousel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./public/js/main.js" type="text/javascript"></script>
 	<script>
 		$(document).ready(function() {
-			$(".owl-carousel").owlCarousel({
-			navigation :true,// Show next and prev buttons
-			slideSpeed : 300,
-			paginationSpeed : 400,
-			items : 1,
-			itemsDesktop :false,
-			itemsDesktopSmall :false,
-			itemsTablet:false,
-			itemsMobile :false
+			$("#owl-demo").owlCarousel({
+				navigation : true,
+				items: 3,
+				loop: true
 			});
 		});
 	</script>
