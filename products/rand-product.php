@@ -1,17 +1,17 @@
-<div class="best-product">
+<div class="best-product mt-100">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="section-border">
-							<h3  class="section-title section-bg-white">Best Food In Our Shop</h3>
+                        <div class="best-pro-section-border">
+							<h3  class="section-title best-pro-bg-white">Best Food In Our Shop</h3>
 						</div>	
                     </div>
                     <div class="col-md-12">
                         <div id="owl-demo">
                             <div class="item">
-                                <div class="product-wrapper mb-25">
+                                <div class="best-product mb-25">
 								    <div class="product-img">
                                         <a href="detail.php?product=1">
                                             <img src="public/uploads/1557896555-product-8.jpg" alt="">

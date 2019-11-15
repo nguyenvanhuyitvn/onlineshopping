@@ -160,8 +160,38 @@
 		<section class="section-4">
 			<?php require_once "./products/rand-product.php"; ?>
 		</section>
+		<section class="section-5">
+			<div class="brand-logo-area pb-100 mt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-brand-logo">
+								<img alt="" src="public/images/brand-logo/logo-1.png">
+							</div>
+						</div>
+						<div class="col-md-3">
+								<div class="single-brand-logo">
+									<img alt="" src="public/images/brand-logo/logo-2.png">
+								</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand-logo">
+								<img alt="" src="public/images/brand-logo/logo-3.png">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-brand-logo">
+								<img alt="" src="public/images/brand-logo/logo-4.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
-	
+	<footer class="pt-40 footer">
+		<?php include 'footer.php' ?>
+	</footer>
 	<!-- Latest compiled and minified CSS & JS -->
 	<script src="./public/js/jquery-3.4.1.min.js"></script>
 	
@@ -173,8 +203,17 @@
 		$(document).ready(function() {
 			$("#owl-demo").owlCarousel({
 				navigation : true,
+				pagination: false,
 				items: 3,
-				loop: true
+				autoPlay: true,
+				loop: true,
+				navigationText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+				itemsDesktop : [1199,4],
+				itemsDesktopSmall : [980,3],
+				itemsTablet: [768,2],
+				itemsTabletSmall: false,
+				itemsMobile : [479,1],
+				singleItem : false,
 			});
 		});
 	</script>

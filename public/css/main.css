@@ -57,6 +57,7 @@
 
 .single-banner img {
     width: 100%;
+    height: 100%;
 }
 
 .banner-left-side {
@@ -141,11 +142,31 @@
     z-index: 1;
 }
 
+.best-pro-section-border::before {
+    background-color: #ebebeb;
+    content: "";
+    height: 1px;
+    right: 0;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    transition: all 0.4s ease 0s;
+    width: 50%;
+    z-index: 1;
+}
+
 .section-bg-white {
     background-color: #fff;
     position: relative;
     z-index: 99;
     width: 20%;
+}
+
+.best-pro-bg-white {
+    background-color: #fff;
+    position: relative;
+    z-index: 99;
+    width: 50%;
 }
 
 .section-3 {
@@ -206,6 +227,21 @@
 }
 
 
+/* Owl carousel */
+
+.best-product {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#owl-demo .owl-buttons {
+    position: absolute;
+    top: -40px;
+    right: -5px;
+}
+
+
 /* Best product */
 
 #owl-demo .item {
@@ -223,10 +259,53 @@
 }
 
 
+/* footer */
+
+footer {
+    background: #26292E;
+}
+
+.footer {
+    color: #dcdcdc;
+}
+
+.payments {
+    display: flex;
+}
+
+.payments img {
+    width: 50px;
+    height: auto;
+    padding: 0 5px 50px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.my_account a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-red {
+    color: #e02c2b;
+}
+
+
 /* Padding */
 
 .pt-100 {
     padding-top: 100px
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-40 {
+    padding-top: 40px;
 }
 
 
@@ -234,4 +313,8 @@
 
 .mb-20 {
     margin-bottom: 20px
+}
+
+.mt-100 {
+    margin-top: 100px;
 }
